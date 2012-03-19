@@ -1,2 +1,2 @@
-here will be my home page 
+inmind.org - Oleksand Pryymak's home page 
 

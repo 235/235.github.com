@@ -6,7 +6,7 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-html, button, input, select, textarea { font-family: Arial, sans-serif; color: #222; }
+/*html, button, input, select, textarea { font-family: Arial, sans-serif; color: #222; }*/
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
 ::-moz-selection { background: #666; color: #fff; text-shadow: none; }
@@ -79,9 +79,6 @@ body{
 #header{
 	margin-top: 20px;
 }
-#header .main-header{
-	border-bottom: 1px #b3b6b8 solid;
-}
 #header h1{
 	color: #000;
 	font-size: 20px;
@@ -126,7 +123,6 @@ body{
 }
 #timeline .post h3{
 	margin: 0;
-	font-family: Georgia, serif;
 	font-size: 16px;
 	font-weight: normal;
 	color: #010101;
@@ -135,7 +131,6 @@ body{
 }
 #timeline .post .caption{
 	color: #9d9d9d;
-	font-family: Georgia, sans-serif;
 	font-size: 12px;
 	margin-top: 4px;
 }
@@ -147,12 +142,11 @@ body{
 }
 #timeline .post .text{
 	color: #393939;
-	font-family: Georgia, sans-serif;
 	font-size: 12px;
 	margin: 10px 0;
 	line-height: 1.5;
 }
-#timeline .post a.open-close{
+/*#timeline .post a.open-close{
 	background: transparent url(../img/button-up-down-arrow.png) no-repeat;
 	height: 17px;
 	width: 16px;
@@ -162,7 +156,7 @@ body{
 }
 #timeline .post.closed a.open-close{
 	background-position: left bottom;
-}
+}*/
 #timeline .post.closed .title{
 	display: table;
 	min-height: 40px;
@@ -177,7 +171,7 @@ body{
 	font-size: 12px;
 	font-weight: bold;
 	text-align: center;
-	width: 211px;
+	width: 246px;
 	height: 28px;
 	border: 1px #87b2d3 solid;
 	background-color: #d6e5f0;
@@ -194,7 +188,7 @@ body{
 #timeline .post a.more:hover{
 	background-color: #FFF;
 }
-#timeline .post a.share-trigger{
+/*#timeline .post a.share-trigger{
 	text-decoration: none;
 	font-size: 12px;
 	font-weight: bold;
@@ -247,7 +241,7 @@ body{
 }
 .lt-ie8 #timeline .post .share-popup .facebook-share-button{
 	top: 16px;
-}
+}*/
 #timeline .post .date{
 	color: #6a6a6a;
 	font-size: 11px;

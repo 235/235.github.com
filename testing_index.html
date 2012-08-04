@@ -1,8 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,27 +9,26 @@
   <link rel="stylesheet" href="static/css/style.css">
 
   <script src="static/js/libs/modernizr-2.5.3.min.js"></script>
-  
-  <link href='http://fonts.googleapis.com/css?family=Abel|Terminal+Dosis:500' rel='stylesheet' type='text/css'>
+
+  <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
   <style type="text/css">
     body {
-      font-family: 'Abel', sans-serif;
-      padding-top: 80px;
-      font-size: 100%;}
+      /*font-family: 'Abel', sans-serif;*/
+      font-family: 'Nobile', Arial, Helvetica, sans-serif;
+      font-size: 0.7em;}
     h1 {
-      font-family: 'Terminal Dosis', sans-serif;
       font-weight: normal;}
     .vcard {
       text-align: center;
       display: block;
       float: left;
-      padding-top: 260px;
+      padding-top: 150px;
       padding-left: 30px;}
     .container {
       text-align: center;
       /*border:1px solid #b0c4de;*/
       display: block;
-      width: 450px;
+      width: 400px;
       margin-left: auto;
       margin-right: auto;}
     .pic {
@@ -44,22 +39,20 @@
     .vcard a.fn {
       text-decoration: none;
       color: #000;}
-    .clear{
-      clear: both;
-      height: 1px}
   </style>  
 </head>
 <body>
   <div id="page">
     <header id="header">
       <div class="container main-header clearfix">
-        <img class="pic" src="/media/imgs/me_and_bobot_small.jpg" alt="me and bobot">
+        <img class="pic" src="media/imgs/me_and_bobot.jpg" alt="me and bobot">
         <!-- div id="about">
           Hi, I'm Sasha, or if you wish Oleksandr Pryymak is my full name. 
         </div -->
         <div id="hcard-Oleksandr-Pryymak" class="vcard">
-          <img src="/imgs/ava_small.jpg" alt="photo of Oleksandr Pryymak" class="photo"/> 
-          <a class="url fn" href="http://inmind.org/">Oleksandr Pryymak</a><br/>
+          <!--img src="media/imgs/ava_small.jpg" alt="photo of Oleksandr Pryymak" class="photo"/--> 
+          <h1><a class="url fn" href="http://inmind.org/">Oleksandr Pryymak</a><br/></h1>
+          <br/>
           
           <a class="email" href="mailto:235@inmind.org">235@inmind.org</a>
           <div class="org">University of Southampton</div>
@@ -69,7 +62,6 @@
           <a class="url" href="http://users.ecs.soton.ac.uk/op08r/" rel="me">my uni homepage</a> <br/>
           <a class="url" href="http://www.pleso.net/" rel="me">my company (suspended)</a>
         </div>
-        <div class="clear">&nbsp;</div>
       </div>
     </header>
 
@@ -137,13 +129,6 @@
           <div class="clearfix">
             {{#if read_more_url}}
               <a target="_blank" class="more" href="{{read_more_url}}">READ MORE</a>
-              <div class="share">
-                <a href="#" class="share-trigger"></a>
-                <div class="share-popup">
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{read_more_url}}" data-text="{{title}}" data-count="none">Tweet</a>
-                  <a class="facebook-share-button" name="fb_share" type="button" share_url="{{read_more_url}}">Share</a>
-                </div>
-              </div>
             {{/if}}
           </div>
         </div>

@@ -15,61 +15,58 @@
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href='http://fonts.googleapis.com/css?family=Abel|Terminal+Dosis:500' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			body {
-				font-family: 'Abel', sans-serif;
-				padding-top: 80px;
+        padding-top: 80px;
+        background: #f8f9f4;
 				font-size: 100%;}
-			h1 {
-				font-family: 'Terminal Dosis', sans-serif;
-				font-weight: normal;}
-			.vcard {
-				text-align: center;
-				display: block;
-				float: left;
-				padding-top: 260px;
-				padding-left: 30px;}
 			.container {
-				text-align: center;
-				/*border:1px solid #b0c4de;*/
-				display: block;
-				width: 450px;
+        display: block;
+        text-align: center;
 				margin-left: auto;
 				margin-right: auto;}
-			.pic {
-				display: block;
-				float:left;}
-			.vcard .photo { 
-				display: none; }
-			.vcard a.fn {
-				text-decoration: none;
-				color: #000;}
 			.clear{
 				clear: both;
 				height: 1px}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<img class="pic" src="/media/imgs/me_and_bobot_small.jpg" alt="me and bobot">
-			<!-- div id="about">
-				Hi, I'm Sasha, or if you wish Oleksandr Pryymak is my full name. 
-			</div -->
-			<div id="hcard-Oleksandr-Pryymak" class="vcard">
-				<img src="/imgs/ava_small.jpg" alt="photo of Oleksandr Pryymak" class="photo"/> 
-				<a class="url fn" href="http://inmind.org/">Oleksandr Pryymak</a><br/>
-				
-				<a class="email" href="mailto:235@inmind.org">235@inmind.org</a>
-				<div class="org">University of Southampton</div>
-				<div class="adr">
-					<span class="country-name">United Kingdom</span>
-				</div>
-				<a class="url" href="http://users.ecs.soton.ac.uk/op08r/" rel="me">my uni homepage</a> <br/>
-				<a class="url" href="http://www.pleso.net/" rel="me">my company (suspended)</a>
-			</div>
-			<div class="clear">&nbsp;</div>
+    <div class="container">
+      <img src="/media/imgs/opryymak.png" width="275" height="398" border="0" />
+      
+      <img src="/media/imgs/bcard.png" width="275" height="398" border="0" usemap="#map" />
+      <map name="map">
+        <area shape="rect" coords="71,38,234,67" alt="LinkedIn profile: Oleksandr Pryymak" href="http://www.linkedin.com/in/opryymak" />
+        <area shape="rect" coords="70,83,231,122" alt="My home page: University of Southampton" href="http://users.ecs.soton.ac.uk/op08r/" />
+        <area shape="rect" coords="67,130,214,170" alt="My team: pleso.net" href="http://www.pleso.net/" />
+        <area shape="rect" coords="65,190,164,215" id="email" />
+      </map>
 
+			<div class="clear">&nbsp;</div>
 		</div>
-	</body>
+    
+    <script type="text/javascript" language="javascript">
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = "xsN@ZejZeu.nCo"
+  key = "C0k12FSoKwmOvPql3Ax6fnytjDHT75s4ciWeXzVUhRBN9dIZrYQp8JEgLGbuMa"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+  document.getElementById("email").setAttribute("href", "mailto:"+link);
+}
+//-->
+  </script>
+
+  </body>
 </html>
